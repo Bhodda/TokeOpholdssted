@@ -1,0 +1,427 @@
+/* brødtekst */
+@font-face {
+    font-family: Circularfont;
+    src: url(CircularStd-Book.otf); 
+}
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: Circularfont;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+::-moz-selection { background: #fb4f4f; color: #fff}
+::selection { background: #fb4f4f; color: #fff}
+::-webkit-selection { background: #fb4f4f; color: #fff}
+::-ms-selection { background: #fb4f4f; color: #fff}
+::-o-selection { background: #fb4f4f; color: #fff}
+
+
+
+/* ------------------------------------------ */
+
+/* ----------------- Header ----------------- */
+
+header {
+    width: 100%;
+    background: #fb4f4f;
+
+    z-index: 10;
+    height: 80px;
+}
+
+#headerwrapper{
+    height: 100%;
+    width: 100%;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#logo{
+    float: left;
+    margin-top: 14px;
+    width: 202px;
+    margin-left: 10px;
+    z-index: 100 !important; 
+    position: relative;
+}
+#mobillogo{
+    float: left;
+    margin-left: 5px;
+    height: 50px;
+    margin-top: 5px;
+}
+
+/* ---------------------- mobilnav --------------- */
+
+.mobilnav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 120%;
+    background-color:#f0f4f8;
+    text-align: center;
+    transform: translateX(100%);
+    transition: transform 0.6s ease;
+    border-left: 3px solid #262e43;
+    z-index: 10000;
+}
+.mobilnav.open {
+    transform: translateX(0);
+}
+.mobilnav li{
+    list-style: none;
+}
+.mobilnav ul a{
+    text-decoration: none;
+    padding: 25px 20px;
+    display:block;
+    color: #262e43;
+    font-size: 1.3em;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mobilnav ul a:active{
+    color: #262e43;
+    font-weight: bold;
+}
+.mobilnav ul a:hover{
+    color: #262e43;
+    font-weight: bold;
+}
+
+.burgerlist {
+    padding-top: 5%;
+}
+
+.submenu1{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 120%;
+    background-color:#f0f3f8;
+    text-align: center;
+    transform: translateX(100%);
+    transition: transform 0.6s ease;
+    border-left: 3px solid #262e43;
+}
+
+.submenu1.opensub {
+    transform: translateX(0);
+}
+
+.nav-toggle{
+    float: right;
+    cursor: pointer;
+}
+
+.toggleclose{
+    float: right;
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+    background: url(../img/icon/burgerclose.png);
+    display: inline-block;
+}
+
+.toggleclose:hover{
+    background: url(../img/icon/burgerclosehover.jpg);
+}
+.toggleclose:active{
+    background: url(../img/icon/burgerclosehover.jpg);
+}
+.marginwrap {
+    margin-top: 15%;
+}
+
+/* ------------------- desknav ------------------ */
+
+/*----------------- desktop -------------------*/
+
+.desknav
+{
+    list-style: none;
+    padding: 0;
+    float: right;
+    height: 100%;
+    text-align: center;
+}
+
+.desknav > li
+{
+    position: relative;
+    float: left;
+    height: 100%;
+    width: 170px;
+}
+
+.desknav a:hover { 
+    color: #911b1b;
+}
+
+
+.desknav a
+{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    line-height: 80px;
+    font-size: 1.1em;
+
+    transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+}
+
+
+/* ---------------- main ----------------- */
+
+main {
+
+}
+
+.textsession{
+    width: auto;
+}
+
+.leftbox {
+    width: 44%;
+    height: 230px;
+    float: left;
+    padding: 4% 3%    
+}
+
+.leftbox > .textboxwrapper {
+    float: right;
+}
+
+.rightbox {
+    width: 44%;
+    height: 230px;
+    float: left;
+    padding: 4% 3%
+}
+
+.textboxwrapper {
+    max-width: 480px;
+}
+
+.textboxwrapper h2 {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+}
+
+.textboxwrapper p {
+    line-height: 1.5em;
+}
+
+.clear {
+    clear: both;
+}
+
+#leftboxone{
+    background: #fff3f3;
+}
+#rightboxone{
+    background-color: #fff
+}
+#leftboxtwo{
+    background: #fb4f4f;
+    
+}
+#rightboxtwo{
+    background: #f77d7d;
+}
+
+
+/* ---------------- slider ---------------- */
+
+#slideswrapper {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    max-height: 600px;
+    overflow: hidden;
+}
+
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.rslides li {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.rslides img {
+    display: block;
+    height: auto;
+    float: left;
+    width: 100%;
+    border: 0;
+}
+
+.callbacks_nav{
+    position: absolute;
+    top: 52%;
+    left: 0;
+    height: 61px;
+    width: 38px;
+    z-index: 3;
+    background: transparent url("../img/slider/themes.gif") no-repeat left top;
+    opacity: 0.6;
+    text-indent: -9999px;
+    margin-top: -45px;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    text-decoration: none;
+    
+    
+    transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+}
+
+.callbacks_nav:active {
+  opacity: 1.0;
+  }
+.callbacks_nav:hover {
+    opacity: 1.0;
+}
+
+.callbacks_nav.next {
+    left: auto;
+    right: 0;
+    background-position: right top;
+}
+
+
+/* ----------------------- Map ------------------------*/
+#map{
+    width:100%;
+    height: 400px;
+    z-index: 1;
+    position: relative;
+}
+.overlay {
+    background:transparent; 
+    position:relative; 
+    width:100%;
+    height:400px;
+    top:400px;
+    margin-top:-400px;
+    z-index: 2;
+}
+
+
+
+/* ---------------- mediaQ ----------------- */
+
+
+
+
+@media all and (min-width: 0px) {
+    .mobilnav {
+        display: block;
+    }
+    .desknav {
+        display: none;
+    }
+} 
+
+
+
+@media all and (min-width: 450px){
+
+
+}
+
+
+
+@media all and (min-width: 700px){
+
+}
+@media all and (min-width: 856px) {
+    .mobilnav {
+        display: none;
+    }
+    .desknav {
+        display: block;
+    }
+}
+@media all and (min-width: 960px) {
+
+}
+
+@media all and (min-width: 1020px) {
+
+}
+
+@media all and (min-width: 1440px) {
+
+}
+
+
