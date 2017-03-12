@@ -1,24 +1,23 @@
-frikadelle menu
+frikadelle menu *done*
 
 
 index:
-billede over footer
-tilføj adresse?
+billede over footer *done*
+tilføj adresse? *done*
 
 værdigrundlag
 indset tekst og med et godt billede. FLERE BILLEDER
+docx: værdi grundlag og samarbejde med skole
 
 
 personale:
-find en spændende måde at løse det på.
-kontaktformel?
-
+find en spændende måde at løse det på. *done??*
+kontaktformel? *version 2.0*
+docx: medarbejder
 
 
 
 
 spørgsmål til toke:
 
-logo??
-flere billeder (bedre billedkvalitet). sommerbilleder.
-adresse?
+galleri?
